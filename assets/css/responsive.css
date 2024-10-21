@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
 @media (min-width: 1450px) {
   .container {
     max-width: 1408px;
@@ -12,32 +18,338 @@
  
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1449px) {
+  .main-menu ul li {
+    margin-left: 20px;
+}
+}
 
+@media (min-width: 1200px) {
+  .challenge-container{
+    max-width: 375px;
+  }
+  .accordion {
+    max-width: 600px;
+  }
+  .score-container{
+    max-width: 1013px;
+  }
 }
 
 @media (max-width: 1199px) {
+  .container{
+    margin: 0px 50px;
+  }
+  .cricket-live-row{
+    flex-wrap: wrap;
+  }
+  .challenge-box a {
+    justify-content: space-between;
+  }
+  .main-menu ul li a {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 992px) {
- 
+  .upcoming-header{
+    border-right:  1px solid #E4E9F0;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 991px) {
-  
+  .score-container{
+    width: 100%;
+  }
+  .live-news{
+    flex-wrap: wrap;
+  }
+  .web-stories-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .web-stories-item h6{
+    transform: translateX(50%);
+    margin: 0;
+  }
+  .uc-cricket-app {
+    gap: 30px;
+  }
+  h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .uc-cricket-app h4 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  .upcoming{
+    flex-wrap: wrap;
+  }
+  .top-team {
+    width: 32%;
+  }
+  .live-news-section {
+    width: 65%;
+  }
+  .probability-box {
+    width: 50%;
+  }
+  .main-menu ul{
+    min-width: max-content;
+  }
+  .main-menu ul li a {
+    font-size: 13px;
+  }
+  .main-menu ul li {
+    margin-left: 10px;
+  }
+  .container {
+    margin: 0px 30px;
+  }
 }
 
+@media (min-width: 768px) {
+  .series-match-time{
+    display: none;
+  }
+  .time-break{
+    display: none;
+  }
+  .team-bettwen{
+    display: none;
+  }
+  .live-badge{
+   text-transform: uppercase;
+  }
+  .all-match-date,
+  .main-tabbar{
+    display: none;
+  }
+}
 @media (max-width: 767px) {
-  
+  .uc-cricket-app {
+    padding: 45px 25px;
+  }
+  .main-footer {
+    display: block;
+  }
+  .footer-about-widget{
+    margin-bottom: 30px;
+  }
+  .footer-download-widget{
+    margin-top: 30px;
+  }
+  .main-menu ,
+  .challenge-container,
+  .news-details,
+  .women-world-cup,
+  .uc-cricket-app,
+  .series-box .series-match-info,
+  .dots,
+  .probability-box,
+  .h2h-btn,
+  .toss-info,
+  .afg-score img,
+  .sa-score img,
+  .man-of-match{
+    display: none;
+  }
+  .banner-program {
+    order: 2;
+  }
+  .match-details{
+    order: 1;
+  }
+  .score-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .match-header {
+    justify-content: space-between;
+  }
+  .live-badge{
+    order: 2;
+  }
+  .primary-menu{
+    justify-content: center;
+  }
+  .header-area {
+    padding: 18px 0px;
+  }
+  .score-container .match-tabbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #081736;
+    border-radius: 0;
+  }
+  .score-container .match-tabbar ul li:hover a, .score-container .match-tabbar ul li.active a {
+    color: white;
+  } 
+  .score-container .match-tabbar ul li:hover,.score-container  .match-tabbar ul li.active {
+    border-bottom: 2px solid #ffffff;
+  }
+  .cricket-live-row{
+    padding-top: 78px;
+  }
+  .live-badge{
+    border-radius: 4px;
+  }
+  .afg-score, .sa-score {
+    border-radius: 4px;
+  }
+  .match-header,
+  .probability-section{
+    padding: 0px 7px;
+  }
+  .series-name{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 300px;
+  }
+  .site-branding{
+    max-width: 58%;
+  }
+  .all-match-date{
+    margin-bottom: 10px;
+    color: black;
+  }
+  .match-start-time{
+    color: #7B4C09;
+  }
+  .match-start-time span{
+    color: #2182F8;
+    display: unset;
+  }
+  .team-flag h4{
+    color: #081736;
+  }
+  .win-team-score .score-update{
+    display: none;
+  }
+  .win-team-score h5{
+    color: #B02828;
+    font-size: 11px;
+  }
+  .win-team-score{
+    justify-content: center;
+  }
+  .match-header {
+    gap: 2px;
+  }
+  .time-break p{
+    font-weight: 600;
+  }
+  .time-break p span{
+    color: black;
+  }
+  .team-score h4,
+  .yet-to-bat h4{
+    color: #081736;
+  } 
+  .main-footer {
+    padding: 30px 0px;
+  }
+  .footer-logo{
+    width: 50%;
+  }
 }
 
 @media (max-width: 576px) {
-  
+  .yet-to-bat{
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .team-flag img{
+    width: 35px;
+    height: 35px;
+  }
+  .team-flag h4{
+    font-size: 11px;
+  }
+  .team-flag h4 {
+    margin-top: 0px;
+  }
+  .team-name {
+    gap: 5px;
+  }
+  .score {
+    font-size: 14px;
+  }
+  .overs{
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .match-tabbar ul li {
+    padding: 8px 0;
+    margin: 0px;
+  }
+  .match-tabbar ul li a {
+    padding: 8px;
+  }
+  .score-section {
+    margin: 6px 0px;
+    padding: 11px 7px;
+  }
+  .series-name {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .series-match-time{
+    font-size: 10px;
+  }
+  .live-badge {
+    padding: 2px 7px;
+    font-size: 10px;
+    line-height: normal;
+  }
+  .time-break p{
+    font-size: 12px;
+  }
+  .score-update span{
+    font-size: 11px;
+    line-height: normal;
+  }
+  .afg-score, .sa-score {
+    color: white;
+    padding: 2px 6px;
+  }
+  .match-tabbar ul li a{
+    font-size: 14px;
+  }
+  .series-name{
+    max-width: 190px;
+  }
+  .all-match-date h6{
+    font-size: 13px;
+  }
+  .cricket-live-row {
+    padding-top: 56px;
+  }
+  .team-score h4,
+  .yet-to-bat h4{
+    font-size: 11px;
+  }
 }
 
 
 @media (max-width: 479px) {
-
+  .container {
+    margin: 0px 15px;
+  }
+  .match-tabbar {
+    padding: 0px 15px;
+  }
+  .box-container{
+    padding: 6px;
+  }
+  .score-container .match-tabbar {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 375px) {

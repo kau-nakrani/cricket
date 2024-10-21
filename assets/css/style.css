@@ -15,6 +15,7 @@ Version:
     02. Template
         2.1 Header
         2.2 Footer
+        2.2 Main Tabbar
 
     03. Page
         3.1 Home Page
@@ -151,6 +152,8 @@ section:active{
   align-items: center;
   justify-content: space-between;
   padding: 88px 0px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .footer-logo{
@@ -196,7 +199,52 @@ section:active{
   color: #6AAEFE;
 }
 
+.footer-contact-widget ul{
+  padding-left: 20px;
+}
+
+/* 2.2 Main Tabbar */
+
+.main-tabbar{
+  background: #081736;
+  padding: 20px 0px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  left: 0;
+  right: 0;
+}
+
+.main-tabbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-tabbar ul li {
+  text-align: center;
+}
+
+.main-tabbar ul li a{
+  font-size: 11px;
+  color: #627293;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.main-tabbar ul li a:hover,
+.main-tabbar ul li a.active{
+  color: white;
+}
+
+
 /* 3.1 Home Page */
+
+.main-body-container{
+  position: relative;
+}
 
 .cricket-live-row {
   display: flex;
@@ -205,7 +253,6 @@ section:active{
 }
 
 .challenge-container{
-  max-width: 375px;
   width: 100%;
 }
 
@@ -413,7 +460,6 @@ section:active{
 
 .accordion {
   width: 100%;
-  max-width: 600px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -485,6 +531,9 @@ section:active{
   padding: 0px 26px;
 }
 
+.banner-program img{
+  width: 100%;
+}
 
 .match-tabbar ul li{
   display: inline-block;
@@ -507,8 +556,6 @@ section:active{
 .match-tabbar ul li.active a{
   color: #217CF7;
 }
-
-
 
 .match-header {
   display: flex;
@@ -774,11 +821,6 @@ section:active{
   gap: 12px;
 }
 
-.upcoming-header{
-  border-right:  1px solid #E4E9F0;
-  padding-right: 10px;
-}
-
 .upcoming-all-news h4{
   font-size: 14px;
   color: black;
@@ -833,6 +875,11 @@ section:active{
   position: relative;
   border-radius: 6px;
   overflow: hidden;
+  width: 100%;
+}
+
+.web-stories-item img{
+  width: 100%;
 }
 
 .marquee-item-shedow{
@@ -853,7 +900,7 @@ section:active{
   font-size: 17px;
   line-height: 23px;
   max-width: 180px;
-  transform: translateX(13%);
+  margin: 0px 12%;
 }
 
 .main-title{
@@ -864,10 +911,11 @@ section:active{
 
 .women-world-cup-tab{
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .women-world-cup-tab li{
-  margin-right: 10px;
   background: white;
   padding: 16px 0;
   min-width: 143px;
@@ -947,4 +995,7 @@ h1{
 .uc-cricket-app-logo{
   text-align: center;
 }
+
+
+
 
