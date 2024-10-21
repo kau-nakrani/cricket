@@ -1,0 +1,950 @@
+/*----------------------------------------------------------------------
+Template Name:
+Template URL: 
+Description: 
+Author: 
+Author URI: 
+Version: 
+*/
+
+/*----------------------------------------------------------------------
+    CSS Index Here
+  ----------------------------------------------------------------------
+ 	  01. Base Css
+
+    02. Template
+        2.1 Header
+        2.2 Footer
+
+    03. Page
+        3.1 Home Page
+        3.2 Features Section
+        3.3 About Section
+        3.4 It Works Section
+        3.5 Counter Section
+        3.6 Our Team Section
+        3.7 Testimonials Section
+        3.8 Pricing Section
+        3.9 Blog Section
+        3.10 Contact Section
+    
+
+----------------------------------------------------------------------*/
+
+/*---========================
+        01. Base css 
+=======================----*/
+
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
+  
+  html,
+  body {
+    scroll-behavior: auto !important;
+  }
+  
+  body {
+    color: #394351;
+    background: #ECF2FD;
+    font-weight: 500 ;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: "BeVietnamPro", sans-serif;
+    overflow-x: hidden;
+  }
+
+li{
+  list-style: none;
+}
+
+.container{
+  margin: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h6{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+input,
+select{
+  max-width: -webkit-fill-available;
+  width: 100%;
+  height: 37px;
+  padding: 0px 20px;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+}
+
+input:focus,
+input:focus-visible,
+input:active,
+select:focus,
+select:focus-visible,
+section:active{
+  border-color: #6AAEFE;
+  outline: none;
+}
+
+/* 2.1 Header */
+
+.header-area,
+.footer-area{
+    background: #081736;
+}
+
+.header-area{
+  padding: 36px 0px;
+}
+
+.primary-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu ul li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-menu ul li a{
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.main-menu ul li a:hover{
+  color: #6AAEFE;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* 2.2 Footer */
+
+.footer-area{
+  color: white;
+}
+
+.main-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 88px 0px;
+}
+
+.footer-logo{
+  margin-bottom: 18px;
+}
+
+.footer-about-widget{
+  max-width: 365px;
+}
+
+.footer-contact-widget ul li{
+  list-style: disc;
+  margin-bottom: 15px;
+}
+
+.footer-contact-widget ul li a{
+  font-weight: 400;
+}
+
+.footer-download-widget p{
+  margin-bottom: 15px;
+}
+
+.footer-download-widget div{
+  display: flex;
+  gap: 10px;
+}
+
+.copy-right{
+  padding: 18px;
+  text-align: center;
+  background: black;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.copy-right a{
+  text-decoration: underline;
+}
+
+.copy-right a:hover,
+.footer-contact-widget ul li a:hover{
+  color: #6AAEFE;
+}
+
+/* 3.1 Home Page */
+
+.cricket-live-row {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.challenge-container{
+  max-width: 375px;
+  width: 100%;
+}
+
+.challenge-box{
+  background: linear-gradient(270deg, #2184F8 0%, #215DF5 100%);
+  border-radius: 15px;
+}
+
+.challenge-box a{
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.challenge-details{
+  display: flex;
+  align-items: center;  
+  gap: 20px;
+}
+
+.challenge-details p{
+  color: #C5CCFF;
+  margin-top: 3px;
+}
+
+.challenge-details p span{
+  color: white;
+}
+
+.slide {
+  background: white;
+  padding: 11px 14px 18px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.featured-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-label {
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  max-width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.dots{
+  margin-right: 1px;
+}
+
+.time-remaining  span{
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #007bff;
+  padding: 7px 5px;
+  border-radius: 7px;
+}
+
+.match-info {
+  border-top: 1px solid #E7F2F4;
+  border-bottom: 1px solid #E7F2F4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px 0;
+  margin: 15px 0px;
+}
+
+
+.team {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 60px;
+}
+
+.team span{
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.team-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.match-date {
+  font-size: 15px;
+}
+
+
+.score-update span{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.score-update{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.afg-score {
+  background-color: rgba(40, 167, 70, 0.70);
+}
+
+.afg-score,
+.sa-score{
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.sa-score {
+  background-color: rgba(220, 53, 70, 0.70);
+}
+
+.slick-prev, .slick-next {
+  background-color: white;
+  border-radius: 50%;
+  color: #5D5694; 
+  box-shadow: 0px 7px 7px 0px #00000026;
+}
+
+.slick-prev, .slick-next{
+  bottom: -45px ;
+  top: auto;
+}
+
+.slick-prev{
+  left: 0;
+}
+
+.slick-next{
+  right: 0;
+}
+
+.popular-box{
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+}
+
+.popular-header{
+  background: linear-gradient(270deg, #2184F8 0%, #215DF5 100%);
+  padding: 20px;
+}
+
+.popular-header h6{
+  font-size: 18px;
+  font-weight: 500;
+  border-left: 3px solid rgba(255, 255, 255, 0.70);
+  color: white;
+  padding-left: 11px;
+}
+
+.popular-match{
+  padding: 0px 15px 17px;
+}
+
+.popular-match p:not(:last-child),
+.upcoming-all-news:not(:last-child){
+  border-bottom: 1px solid #E4E9F0;
+}
+
+.popular-match p{
+  padding: 20px 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.popular-match p img{
+  border-radius: 100%;
+  height: 18px;
+  width: 18px;
+}
+
+.search-bar{
+  position: relative;
+  margin-top: 20px;
+}
+
+.search-bar i{
+  position: absolute;
+  right: 20px;
+  transform: translateY(50%);
+}
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header.active {
+  color: #0F54DA;
+}
+
+.accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-header span{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.accordion-content {
+  display: none;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.accordion-content li{
+  padding: 9px 23px;
+}
+
+.accordion-content li a{
+  color: #51555E;
+}
+
+.view-more-btn{
+  text-align: center;
+  padding: 22px 0px 3px;
+}
+
+.view-more-btn a{
+  color: #14439E;
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.box-container{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.match-tabbar{
+  border-radius: 89px;
+  padding: 0px 26px;
+}
+
+
+.match-tabbar ul li{
+  display: inline-block;
+  padding: 17px 0;
+  margin: 0px 10px;
+}
+
+.match-tabbar ul li a{
+  color: #586577;
+  font-weight: 600;
+  padding: 17px;
+}
+
+.match-tabbar ul li:hover,
+.match-tabbar ul li.active{
+  border-bottom: 2px solid #217CF7;
+}
+
+.match-tabbar ul li:hover a,
+.match-tabbar ul li.active a{
+  color: #217CF7;
+}
+
+
+
+.match-header {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.live-badge {
+  background: #FE4848;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 89px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.series-name {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.series-box span{
+  display: block;
+}
+
+.match-info {
+  color: #586577;
+  font-weight: 400;
+}
+
+.score-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  border-top: 1px solid #E7F2F4;
+  border-bottom: 1px solid #E7F2F4;
+  padding: 30px 20px;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-flag h4{
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.team-flag img{
+  width: 59px;
+  height: 59px;
+  border-radius: 100%;
+}
+
+.team-score span{
+  display: block;
+}
+
+.score{
+  font-size: 23px;
+  color: #2F335C;
+  font-weight: 700;
+}
+
+.overs {
+  color: #586577;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.toss-info {
+  text-align: center;
+  font-weight: bold;
+  color: #2F335C;
+  font-size: 18px;
+}
+
+.yet-to-bat{
+  font-size: 23px;
+  color: #586577;
+  font-weight: 700;
+}
+
+.probability-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.probability-bar {
+  height: 2px;
+  display: flex;
+}
+
+.probability-box{
+  width: 35%;
+}
+
+.team-a-bar {
+  background-color: #00B564;
+}
+
+.draw-bar{
+  background-color: #FF9012;
+}
+
+.team-b-bar {
+  background-color: #FE4848;
+}
+
+.probability-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.team-a-probability span{
+  color: #00B564;
+}
+
+.team-b-probability span {
+  color: #FE4848;
+}
+
+.draw-probability span{
+  color: #FF9012;
+}
+
+.h2h-btn {
+  background: #F5F6FD;
+  color: #595E85;
+  padding: 10px 20px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px #11165040;
+  font-family: "HelveticaInseratCyr" , sans-serif;
+}
+
+.result-badge{
+  background: #0DAA64;
+}
+
+.scheduled-badge{
+  background: #FC9014;
+}
+
+.win-info{
+  color: #0DAA64;
+}
+
+.cricketer-avatar{
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F1F1F1 100%);
+  border-radius: 100%;
+  max-width: fit-content;
+}
+
+.cricketer-avatar img{
+  width: 46px;
+  height: 46px;
+}
+
+.team-b-score{
+  text-align: right;
+}
+
+.man-of-match{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.player-name{
+  color: black;
+}
+
+.player-title{
+  font-size: 14px;
+  color: #586577;
+}
+
+.scheduled-info{
+  color: #FC9014;
+}
+
+.series-match-info{
+  color: #586577;
+}
+
+.news-section{
+  display: flex;
+  gap: 20px;
+}
+
+.live-news-section{
+  width: 75%;
+}
+
+.live-news{
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.live-details h6{
+  font-size: 15px;
+  color: #586577;
+  font-weight: 500;
+}
+
+.live-details h4{
+  font-size: 23px;
+  color: black;
+  font-weight: 600;
+  margin: 11px 0px 9px;
+  line-height: 29px;
+}
+
+.live-details p{
+  font-weight: 400;
+  color: #586577;
+  margin-bottom: 16px;
+  line-height: 29px;
+}
+
+.live-details a,
+.women-match-box-more a{
+  text-decoration: underline;
+  font-weight: 600;
+  color: #2182F8;
+}
+
+.heading-border{
+  border-left: 3px solid #229ED3;
+  padding-left: 10px ;
+}
+
+.upcoming-header h5{
+  font-size: 23px;
+  color: #2182F8;
+  margin-bottom: 20px;
+}
+
+.news-line{
+  border-top: 1px solid #E4E9F0;
+  padding: 20px 0px;
+}
+
+.news-line h4{
+  color: black;
+  margin-bottom: 10px;
+}
+
+.upcoming , .upcoming-all-news{ 
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.upcoming-header{
+  border-right:  1px solid #E4E9F0;
+  padding-right: 10px;
+}
+
+.upcoming-all-news h4{
+  font-size: 14px;
+  color: black;
+} 
+
+.upcoming-all-news span{
+  color: #586577;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.upcoming-all-news {
+  padding: 20px 0px;
+}
+
+.top-team{
+  width: 25%;
+  min-height: 100%;
+}
+
+.top-team .popular-box{
+  min-height: 100%;
+}
+
+.county-fleg{
+  padding: 20px 0px;
+  border-bottom: 1px solid #E4E9F0;
+}
+
+.county-fleg select{
+  padding: 10px;
+}
+
+.top-team p{
+  font-size: 15px;
+  color: black;
+}
+
+.web-stories h5{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.web-stories-content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 18px;
+  margin-top: 15px;
+}
+
+.web-stories-item{
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.marquee-item-shedow{
+  background: linear-gradient(0deg, #080D36 0%, rgba(5, 54, 213, 0.07) 59.54%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.web-stories-item h6{
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  max-width: 180px;
+  transform: translateX(13%);
+}
+
+.main-title{
+  font-size: 21px;
+  font-weight: 600;
+  color: #081736;
+}
+
+.women-world-cup-tab{
+  display: flex;
+}
+
+.women-world-cup-tab li{
+  margin-right: 10px;
+  background: white;
+  padding: 16px 0;
+  min-width: 143px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 89px;
+}
+
+.women-world-cup-tab li a{
+  color: #586577;
+}
+
+.women-match-box{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px solid #E4E9F0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.women-match-box .live-details h4{
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.women-match-box .live-details p{
+  margin-bottom: 0;
+}
+
+.women-match-box-more{
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.uc-cricket-app{
+  background-image: url('/assets/images/backgounds/uc-cricket-app.png'), linear-gradient(270deg, #002966 0%, #215DF5 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 73px 55px;
+  display: flex;
+  align-items: center;
+  gap: 87px;
+}
+
+h1{
+  font-size: 62px;
+  line-height: 74px;
+  font-weight: 400;
+  color: white;
+  font-family: "BebasNeue" , sans-serif;
+  text-align: center;
+  max-width: 450px;
+}
+
+.uc-cricket-app-live{
+  color: #1AFFFF;
+}
+
+.uc-cricket-app-app{
+  color: #79D2FF;
+}
+
+.uc-cricket-app-icon{
+  display: flex;
+  gap: 10px;
+}
+
+.uc-cricket-app h4{
+  font-size: 25px ;
+  color: white;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+.uc-cricket-app-logo{
+  text-align: center;
+}
+
