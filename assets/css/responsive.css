@@ -124,7 +124,8 @@
    text-transform: uppercase;
   }
   .all-match-date,
-  .main-tabbar{
+  .main-tabbar,
+  .win-team-info{
     display: none;
   }
 }
