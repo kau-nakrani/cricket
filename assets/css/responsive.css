@@ -289,9 +289,6 @@
     padding: 8px 0;
     margin: 0px;
   }
-  .match-tabbar ul li a {
-    padding: 8px;
-  }
   .score-section {
     margin: 6px 0px;
     padding: 11px 7px;
@@ -321,6 +318,7 @@
   }
   .match-tabbar ul li a{
     font-size: 14px;
+    padding: 8px 19px;
   }
   .series-name{
     max-width: 190px;
@@ -351,8 +349,13 @@
   .score-container .match-tabbar {
     padding: 0 15px;
   }
+  .site-branding {
+    max-width: 30%;
+  }
 }
 
-@media (max-width: 375px) {
-  
+@media (max-width: 374px) {
+  .match-tabbar ul li a{
+    padding: 8px  ;
+  }
 }

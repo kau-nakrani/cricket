@@ -732,7 +732,25 @@ section:active{
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px #11165040;
   font-family: "HelveticaInseratCyr" , sans-serif;
+  z-index: 2;
+  position: relative;
 }
+
+.h2h-shdow{
+  width: 143px;
+  position: absolute;
+  bottom: -13px;
+  left: -5px;
+}
+
+.slick-prev.slick-disabled, .slick-next.slick-disabled{
+  opacity: .50;
+}
+
+.h2h-box{
+  position: relative;
+}
+
 
 .result-badge{
   background: #0DAA64;

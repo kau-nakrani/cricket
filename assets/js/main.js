@@ -1,9 +1,8 @@
 $(document).ready(function(){
-    $('.slider').slick({
-        infinite: true,
+    $('.responsive').slick({
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
         autoplaySpeed: 200000,
         arrows: true,
         dots: true,
@@ -11,8 +10,6 @@ $(document).ready(function(){
         nextArrow:"<button class='a-right control-c next slick-next'><img src='assets/images/icons/arrow-right.svg'></button>"
     });
 });
-
-
 
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
