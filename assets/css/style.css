@@ -445,7 +445,7 @@ section:active{
   padding: 20px;
 }
 
-.popular-header h6{
+.popular-header h2{
   font-size: 18px;
   font-weight: 500;
   border-left: 3px solid rgba(255, 255, 255, 0.70);
@@ -611,7 +611,8 @@ section:active{
   margin-bottom: 5px;
 }
 
-.series-box span{
+.series-match-info,
+.series-name{
   display: block;
 }
 
@@ -817,7 +818,7 @@ section:active{
   gap: 27px;
 }
 
-.live-details h6{
+.live-details h3{
   font-size: 15px;
   color: #586577;
   font-weight: 500;
