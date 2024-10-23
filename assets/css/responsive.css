@@ -55,6 +55,10 @@
   .upcoming-header{
     border-right:  1px solid #E4E9F0;
     padding-right: 10px;
+    width: 100%;
+  }
+  .upcoming-all-news-box{
+    width: 100%;
   }
 }
 
@@ -108,9 +112,18 @@
   .container {
     margin: 0px 30px;
   }
+  .probability-section {
+    gap: 5px;
+  }
+  .h2h-btn {
+    padding: 10px 15px;
+  }
+  .h2h-shdow {
+    width: 133px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .series-match-time{
     display: none !important;
   }
@@ -129,7 +142,7 @@
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .uc-cricket-app {
     padding: 45px 25px;
   }
@@ -153,7 +166,7 @@
   .h2h-btn,
   .toss-info,
   .afg-score img,
-  .sa-score img,
+  .score-b img,
   .man-of-match{
     display: none;
   }
@@ -199,7 +212,7 @@
   .live-badge{
     border-radius: 4px;
   }
-  .afg-score, .sa-score {
+  .afg-score, .score-b {
     border-radius: 4px;
   }
   .match-header,
@@ -258,6 +271,9 @@
   .footer-logo{
     width: 50%;
   }
+  .h2h-shdow{
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -312,7 +328,7 @@
     font-size: 11px;
     line-height: normal;
   }
-  .afg-score, .sa-score {
+  .afg-score, .score-b {
     color: white;
     padding: 2px 6px;
   }

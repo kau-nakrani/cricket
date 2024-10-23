@@ -92,10 +92,12 @@ input,
 select{
   max-width: -webkit-fill-available;
   width: 100%;
-  height: 37px;
+  height: 45px;
   padding: 0px 20px;
   border: 1px solid #00000033;
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 input:focus,
@@ -106,6 +108,14 @@ select:focus-visible,
 section:active{
   border-color: #6AAEFE;
   outline: none;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.lh-0{
+  line-height: normal;
 }
 
 /* 2.1 Header */
@@ -257,18 +267,20 @@ section:active{
 .challenge-box{
   background: linear-gradient(270deg, #2184F8 0%, #215DF5 100%);
   border-radius: 15px;
-}
-
-.challenge-box a{
   display: flex;
   align-items: center;
   padding: 0px 10px;
 }
 
 .challenge-details{
+  width: 100%;
+}
+
+.challenge-details a{
   display: flex;
   align-items: center;  
-  gap: 20px;
+  gap: 22%;
+  margin-left: -16px;
 }
 
 .challenge-details p{
@@ -302,19 +314,23 @@ section:active{
   max-width: fit-content;
   font-size: 12px;
   font-weight: 600;
+  line-height: normal;
 }
 
 .dots{
   margin-right: 1px;
 }
 
-.time-remaining  span{
+.time-remaining span{
   font-size: 17px;
   font-weight: bold;
   color: #ffffff;
   background: #007bff;
-  padding: 7px 5px;
+  padding: 9px 5px;
   border-radius: 7px;
+  margin-left: 4px;
+  width: 39px;
+  display: inline-block;
 }
 
 .match-info {
@@ -381,12 +397,21 @@ section:active{
 
 .match-date {
   font-size: 15px;
+  font-weight: 500;
 }
 
 .score-update span{
   display: flex;
   align-items: center;
   width: fit-content;
+  color: rgba(88, 101, 119, 1);
+  line-height: 16px;
+}
+
+.score-update-team{
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 2px;
 }
 
 .score-update{
@@ -396,19 +421,20 @@ section:active{
   gap: 5px;
 }
 
-.afg-score {
-  background-color: rgba(40, 167, 70, 0.70);
+.score-a {
+  background-color: rgba(4, 129, 61, 0.7);
 }
 
-.afg-score,
-.sa-score{
+.score-update .score-a,
+.score-update  .score-b{
   color: white;
   padding: 5px 10px;
   border-radius: 15px;
+  font-size: 13px;
 }
 
-.sa-score {
-  background-color: rgba(220, 53, 70, 0.70);
+.score-b {
+  background-color: rgba(202, 16, 16, 0.7);
 }
 
 .slick-prev, .slick-next {
@@ -488,7 +514,7 @@ section:active{
 .search-bar i{
   position: absolute;
   right: 20px;
-  transform: translateY(50%);
+  transform: translateY(60%);
 }
 
 .accordion {
@@ -540,6 +566,8 @@ section:active{
 
 .view-more-btn a{
   color: #14439E;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 @keyframes slideDown {
@@ -594,12 +622,13 @@ section:active{
   display: flex;
   align-items: center;
   gap: 17px;
+  padding: 0px 20px;
 }
 
 .live-badge {
   background: #FE4848;
   color: white;
-  padding: 5px 14px;
+  padding: 8px 14px;
   border-radius: 89px;
   font-weight: 600;
   font-size: 13px;
@@ -654,6 +683,12 @@ section:active{
   display: block;
 }
 
+.team-score h4{
+  font-size: 23px;
+  font-weight: 600;
+  color: rgba(88, 101, 119, 1);
+}
+
 .score{
   font-size: 23px;
   color: #2F335C;
@@ -682,6 +717,29 @@ section:active{
 .probability-section {
   display: flex;
   justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.probability-section .score-update{
+  font-size: 13px;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.probability-section .score-update .score-a,
+.probability-section .score-update .score-b {
+  padding: 8px 18px;
+  border-radius: 89px;
+}
+
+.probability-section .score-update .score-a img,
+.probability-section .score-update .score-b img{
+  margin-right: 5px;
+}
+
+.score-section .time-remaining span{
+  font-size: 20px;
+  padding: 10px 8px;
 }
 
 .probability-bar {
@@ -709,7 +767,16 @@ section:active{
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+}
+
+.probability-text span{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.probability-text span span{
   font-size: 15px;
+  font-weight: 500;
 }
 
 .team-a-probability span{
@@ -808,6 +875,10 @@ section:active{
   gap: 20px;
 }
 
+.news-section .popular-match p {
+  padding: 16px 6px;
+}
+
 .live-news-section{
   width: 75%;
 }
@@ -836,7 +907,7 @@ section:active{
   font-weight: 400;
   color: #586577;
   margin-bottom: 16px;
-  line-height: 29px;
+  line-height: 24px;
 }
 
 .live-details a,
@@ -865,6 +936,7 @@ section:active{
 .news-line h4{
   color: black;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .upcoming , .upcoming-all-news{ 
@@ -876,7 +948,12 @@ section:active{
 .upcoming-all-news h4{
   font-size: 14px;
   color: black;
+  font-weight: 500;
 } 
+
+.news-date{
+  font-size: 15px;
+}
 
 .upcoming-all-news span{
   color: #586577;
@@ -912,8 +989,9 @@ section:active{
 }
 
 .web-stories h5{
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
+  color: rgba(16, 16, 16, 1);
 }
 
 .web-stories-content{
@@ -928,6 +1006,7 @@ section:active{
   border-radius: 6px;
   overflow: hidden;
   width: 100%;
+  max-height: 357px;
 }
 
 .web-stories-item img{
