@@ -14,14 +14,102 @@
 
 }
 
-@media (max-width: 1600px) {
- 
-}
 
 @media (max-width: 1449px) {
   .main-menu ul li {
     margin-left: 20px;
 }
+}
+
+
+@media (max-width: 1400px) {
+  .team-flag img {
+    width: 45px;
+  }
+  .team-flag h4,
+  .score,
+  .yet-to-bat,
+  .team-score h4,
+  .uc-cricket-app h4 {
+    font-size: 18px;
+  }
+  .overs,
+  .toss-info {
+    font-size: 14px;
+  }
+  .live-badge {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .live-details h4 {
+    font-size: 20px;
+  }
+  .probability-text span {
+    font-size: 12px;
+  }
+  .probability-text span span {
+    font-size: 13px;
+  }
+  .probability-section .score-update .score-a, .probability-section .score-update .score-b {
+    padding: 5px 9px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 57px;
+  }
+  .uc-cricket-app {
+    padding: 35px;
+  }
+  .series-name {
+    font-size: 16px;
+  }
+  .series-match-info{
+    font-size: 14px;
+  }
+  .popular-header {
+    padding: 14px;
+  }
+  .web-stories-item h6 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .women-world-cup-tab li {
+    padding: 12px 0;
+    min-width: 132px;
+  }
+  .women-world-cup-tab li a {
+    font-size: 15px;
+  } 
+  .live-details p {
+    margin-bottom: 0px;
+    line-height: 20px;
+    font-size: 13px;
+  }
+  .live-details h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .upcoming-all-news span {
+    font-size: 12px;
+  }
+  .time-remaining span {
+    font-size: 14px;
+    padding: 6px 5px;
+    width: 33px;
+  }
+  .team-logo {
+    width: 42px;
+  }
+  .main-menu ul li a {
+    font-size: 15px;
+  }
+  .uc-cricket-app h4 {
+    margin: 14px 0px;
+  }
+  .live-details a{
+    margin-top: 15px;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -166,12 +254,18 @@
   .h2h-btn,
   .toss-info,
   .afg-score img,
+  .score-a img,
   .score-b img,
   .man-of-match{
     display: none;
   }
   .banner-program {
     order: 2;
+  }
+  .probability-section .score-update .score-a, 
+  .probability-section .score-update .score-b{
+    border-radius: 3px;
+    padding: 3px 6px;
   }
   .match-details{
     order: 1;
@@ -273,6 +367,10 @@
   }
   .h2h-shdow{
     display: none;
+  }
+  .footer-about-widget p,
+  .footer-contact-widget ul li a {
+    font-size: 14px;
   }
 }
 
