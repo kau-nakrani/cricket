@@ -15,14 +15,7 @@
 }
 
 
-@media (max-width: 1449px) {
-  .main-menu ul li {
-    margin-left: 20px;
-}
-}
-
-
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .team-flag img {
     width: 45px;
   }
@@ -110,6 +103,12 @@
     margin-top: 15px;
     font-size: 14px;
   }
+}
+
+@media (max-width: 1449px) {
+  .main-menu ul li {
+    margin-left: 20px;
+}
 }
 
 @media (min-width: 1200px) {
